@@ -1,81 +1,91 @@
-# Flutter/Dart/Pub related
-.dart_tool/
-.packages
-.pub-cache/
-.pub/
-build/
-.flutter-plugins
-.flutter-plugins-dependencies
-.flutter-versions
-.flutter/
-.flutter_build/
-generated_plugin_registrant.dart
+# Tourney Clock Mobile
 
-# Android related
-**/android/.gradle/
-**/android/.idea/
-**/android/app/build/
-**/android/build/
-**/android/captures/
-**/android/.cxx/
-**/android/.externalNativeBuild/
-**/android/local.properties
+A simple and intuitive timer app designed for tournament play, built with Flutter.
 
-# iOS related
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.podspec
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/ephemeral/
-**/ios/Pods/
-**/ios/Runner.xcworkspace/
-**/ios/Runner/GeneratedPluginRegistrant.*
-**/ios/Flutter/App.framework
-**/ios/Flutter/Flutter.xcarchive
-**/ios/Flutter/Flutter.podspec.json
-**/ios/Flutter/engine/
-**/ios/Flutter/flutter_export_environment.sh
-**/ios/.symlinks/
-**/ios/Flutter/Flutter.podspec.lock
+## Features
 
-# macOS related
-**/macos/Flutter/Flutter.framework
-**/macos/Flutter/Flutter.podspec
-**/macos/Flutter/ephemeral/
-**/macos/Flutter/Generated.xcconfig
-**/macos/Pods/
-**/macos/Runner.xcworkspace/
-**/macos/Runner/GeneratedPluginRegistrant.*
-**/macos/.symlinks/
+- Easy-to-use timer interface
+- Customizable timer settings
+- Sound notifications
+- Pause, resume, and reset functionality
+- Supports multiple platforms (iOS, Android, macOS)
 
-# IDEs
-.idea/
-.vscode/
-*.iml
-*.ipr
-*.iws
+## Tech
 
-# Misc
-*.log
-pubspec.lock
+- Flutter
+- Dart
 
-MIT License
+## Project Structure
 
-Copyright (c) 2025 Chris Yoon
+```
+/lib
+  /models        # Data models
+  /screens       # UI Screens
+  /widgets       # Reusable widgets
+  /services      # Business logic and services
+/assets
+  /sounds        # Audio files
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Prerequisites
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+- Flutter SDK installed
+- Dart SDK installed
+- Compatible IDE (VSCode, Android Studio, etc.)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+## Getting Started
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/chrisyoon/tourney_clock_mobile.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd tourney_clock_mobile
+   ```
+3. Get dependencies:
+   ```
+   flutter pub get
+   ```
+4. Run the app:
+   ```
+   flutter run
+   ```
+
+## Sounds
+
+The app uses custom sound files located in the `/assets/sounds` directory. These sounds play on timer events like start, pause, and end.
+
+## Using the App
+
+- Set your desired timer duration.
+- Start the timer to begin counting down.
+- Use pause and resume controls as needed.
+- Reset the timer to start over.
+
+## Common Commands
+
+- `flutter run` - Run the app on connected device or emulator
+- `flutter build` - Build the app for release
+- `flutter analyze` - Analyze the project for issues
+- `flutter test` - Run tests
+
+## Troubleshooting
+
+- Ensure Flutter and Dart SDKs are properly installed and configured.
+- Run `flutter clean` if you encounter build issues.
+- Check for dependency conflicts in `pubspec.yaml`.
+
+## Roadmap
+
+- Add support for multiple timers
+- Implement customizable themes
+- Add notification integration
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
